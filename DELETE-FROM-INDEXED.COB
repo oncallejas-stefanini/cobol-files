@@ -17,7 +17,7 @@
        77  REGISTRO-ENCONTRADO PIC X.
        77  CAMPO-EMPLEADOS-ID PIC Z(5).
 
-       PROCEDURE
+       PROCEDURE DIVISION.
        EMPIEZA-PROGRAMA.
        OPEN I-O EMPLEADOS-ARCHIVO.
        PERFORM OBTENER-REGISTRO-DE-EMPLEADO.
@@ -39,7 +39,7 @@
        MOVE ZEROES TO EMPLEADOS-ID.
        INTRODUCIR-NUMERO-ID-EMPLEADO.
        DISPLAY " ".
-       DISPLAY "Introduce un numero de ID del empleado." .
+       DISPLAY Introduce un numero de ID de empleado. .
        DISPLAY "Introduce un numero del 1 al 99999".
        DISPLAY "Introduce cualquier otra cosa para salir.".
        ACCEPT CAMPO-EMPLEADOS-ID.

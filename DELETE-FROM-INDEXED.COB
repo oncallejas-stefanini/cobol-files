@@ -4,12 +4,12 @@
        INPUT-OUTPUT SECTION.
 
        FILE-CONTROL.
-      *Archivo físico en modo dinámico.
+      *Archivo fï¿½sico en modo dinï¿½mico.
        COPY "PHYSICAL-FILE.cbl".
 
        DATA DIVISION.
        FILE SECTION.
-      *Archivo lógico.
+      *Archivo lï¿½gico.
        COPY "LOGICAL-FILE.cbl".
 
        WORKING-STORAGE SECTION.
@@ -39,7 +39,7 @@
        MOVE ZEROES TO EMPLEADOS-ID.
        INTRODUCIR-NUMERO-ID-EMPLEADO.
        DISPLAY " ".
-       DISPLAY "Introduce un numero de ID de empleado." .
+       DISPLAY "Introduce un numero de ID del empleado." .
        DISPLAY "Introduce un numero del 1 al 99999".
        DISPLAY "Introduce cualquier otra cosa para salir.".
        ACCEPT CAMPO-EMPLEADOS-ID.
@@ -85,7 +85,7 @@
        DISPLAY "DIRECCION: " EMPLEADOS-DIRECCION.
 
        PREGUNTA-ELIMINAR.
-       DISPLAY "¿SEGURO QUE QUIERES ELIMINAR ESTE REGISTRO (S/N)?".
+       DISPLAY "ï¿½SEGURO QUE QUIERES ELIMINAR ESTE REGISTRO (S/N)?".
        ACCEPT SI-A-ELIMINAR.
        IF SI-A-ELIMINAR= "s"
        MOVE "S" TO SI-A-ELIMINAR.

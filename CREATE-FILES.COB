@@ -1,4 +1,4 @@
-       IDENTIFICATION DIVISION.
+       IDENTIFICATION DIVISION
        PROGRAM-ID. CREATE-FILES.
        ENVIRONMENT DIVISION.
        INPUT-OUTPUT SECTION.
@@ -30,9 +30,9 @@
        01  EDAD PIC X(19)
            VALUE "Introduce la edad: ".
        01  TELEFONO PIC X(33)
-           VALUE "Introduce un número de teléfono: ".
+           VALUE "Introduce un nï¿½mero de telï¿½fono: ".
        01  DIRECCION PIC X(25)
-           VALUE "Introduce una dirección: ".
+           VALUE "Introduce una direcciï¿½n: ".
 
        01  SI-NO PIC X.
        01  ENTRADA PIC X.
@@ -88,7 +88,7 @@
        WRITE EMPLEADOS-REGISTRO.
 
        REINICIAR.
-       DISPLAY "¿Desea almacenar otro registro en la base de datos?".
+       DISPLAY "ï¿½Desea almacenar otro registro en la base de datos?".
        ACCEPT SI-NO.
        IF SI-NO = "s"
        MOVE "S" TO SI-NO.
